@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./input.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body class="overflow-x-hidden">
+  <div class="w-full min-h-screen ">
+    <!-- headeer -->
+    <header class="header absolute w-full h-[620px] px-10 py-3">
+
+      <!-- navbar -->
+     <nav class="flex lg:px-[50px] justify-between items-center h-[60px] text-white">
+  <h1 class="text-[35px] font-hind font-bold">
+    Med<span class="text-blue-300">i</span>ck
+  </h1>
+
+ <!-- list icon -->
+  <div class=" lg:hidden block ms-auto mx-5">
+    <button id="menu-btn" class="text-white  hover:text-primaryColor text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+ 
+  <ul
+    id="nav-items"
+    class="hidden lg:flex font-hind justify-between gap-x-10 items-center text-white"
+  >
+    <li class="  text-[20px] font-semibold transition ease-in-out delay-150 hover:text-blue-300 capitalize cursor-pointer">
+      <a href="index.html">Home</a>
+    </li>
+    <li class="text-[20px] capitalize transition ease-in-out delay-150 hover:text-blue-300 cursor-pointer">
+      <a href="about.html">About</a>
+    </li>
+    <li class="text-[20px] capitalize transition ease-in-out delay-150 hover:text-blue-300 cursor-pointer">
+      <a href="departments.html">Departments</a>
+    </li>
+    <li class="text-[20px] capitalize transition ease-in-out delay-150 hover:text-blue-300 cursor-pointer">
+      <a href="contact.html">Contact</a>
+    </li>
+  </ul>
+
+  <!-- search-->
+  <div class="w-[20%] hidden lg:block">
+    <input
+      type="search"
+      class="p-2 rounded-[5px] bg-transparent border-[1px] w-full text-white"
+      placeholder="search here..."
+    />
+  </div>
+
+  <!-- moon icon-->
+  <div class="mode-icon cursor-pointer text-2xl">
+    <i id="theme-icon" class="fas fa-moon"></i>
+  </div>
+</nav>
+
+<!-- mob nav -->
+<div class="w-full relative   ">
+  <ul
+  id="mobile-nav"
+  class="lg:hidden   absolute rounded-xl  w-full bg-white    flex-col   text-gray-600 text-center font-hind"
+>
+  <li class="text-[20px] font-semibold my-3 transition mt-10 ease-in-out delay-150 hover:text-blue-300 capitalize cursor-pointer">
+    <a href="index.html">Home</a>
+  </li>
+  <li class="text-[20px] capitalize my-3 transition ease-in-out delay-150 hover:text-blue-300 cursor-pointer">
+    <a href="about.html">About</a>
+  </li>
+  <li class="text-[20px] capitalize my-3 transition ease-in-out delay-150 hover:text-blue-300 cursor-pointer">
+    <a href="departments.html">Departments</a>
+  </li>
+  <li class="text-[20px] capitalize my-3 transition ease-in-out delay-150 hover:text-blue-300 cursor-pointer">
+    <a href="contact.html">Contact</a>
+  </li>
+  <div class="md:w-[40%] w-[80%] m-auto">
+    <input
+      type="search"
+      class="p-2 rounded-full placeholder:text-gray-600 focus:outline-none text-black bg-transparent border-[1px] w-full"
+      placeholder="search here..."
+    />
+  </div>
+</ul>
+
+
+</div>
+      <div class="text-white mt-[100px] text-center w-6/6">
+        <h6 class="text-blue-300 font-semibold uppercase">Medical</h6>
+        <h1 class=" md:text-[60px] text-[35px]   font-semibold">
+          Better Doctors.
+          <span class="block"> Better Care.</span>
+        </h1>
+        <button
+          class="hover:text-blue-300 capitalize font-bold m-auto my-5 text-white border-white border-2 text-[20px] flex justify-center items-center rounded-full px-3 py-2">
+          read more
+        </button>
+      </div>
+    </header>
+
+
+
+    <div class="  hidden w-full  absolute z-50 left-0 top-[560px] lg:grid grid-cols-3 xl:gap-x-10 gap-x-6 px-20">
+      <!-- section1 -->
+      <div class="flex section flex-col items-center rounded-[10px] justify-center p-5 bg-white custom-shadow">
+        <div class="flex w-full items-center">
+          <div
+            class=" icon w-[4rem] text-[25px] h-[4rem] p-10 flex justify-center items-center bg-gray-100 text-blue-300 hover:bg-blue-300 hover:text-white transition ease-in-out delay-150 rounded-[5px] duration-300">
+            <i class="fas fa-shield-alt text-[25px]"></i>
+          </div>
+          <div class="ml-10">
+            <h2 class="text-gray-500 text-[18px] font-semibold">Protect</h2>
+            <h3 class="font-bold text-[20px]">Qualified Team</h3>
+          </div>
+        </div>
+        <p class="mt-4 text-gray-600 xl:text-[18px] text-[16px] pl-5 w-[300px]">
+          Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+          vitae sit.
+        </p>
+      </div>
+
+      <!-- section2 -->
+      <div class="  flex flex-col items-center custom-shadow rounded-[10px] justify-center p-5 section  bg-white ">
+        <div class="flex w-full items-center">
+          <div
+            class="icon w-[4rem] text-[25px] h-[4rem] p-10 flex justify-center items-center bg-gray-100 text-blue-300 hover:bg-blue-300 hover:text-white transition ease-in-out delay-150  rounded-[5px] duration-300">
+            <i class="fas fa-hands-helping text-[25px]"></i>
+          </div>
+          <div class="ml-10">
+            <h2 class="text-gray-500 text-[18px] font-semibold">Help</h2>
+            <h3 class="font-bold text-[20px] ">Qualified Service</h3>
+          </div>
+        </div>
+        <p class="mt-4  text-gray-600 xl:text-[18px] text-[16px] pl-5  w-[300px]">
+          Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+          vitae sit.
+        </p>
+      </div>
+      <!-- section3 -->
+      <div class="  flex flex-col items-center custom-shadow rounded-[10px] justiy-center p-5 section  bg-white">
+        <div class="flex w-full items-center">
+          <div
+            class=" icon w-[4rem] text-[25px] h-[4rem] p-10 flex justify-center items-center bg-gray-100 text-blue-300 hover:bg-blue-300 hover:text-white transition ease-in-out delay-150  rounded-[5px] duration-300">
+            <i class="fas fa-globe text-[25px]"></i>
+          </div>
+          <div class="ml-10">
+            <h2 class="text-gray-500 text-[18px] font-semibold">World</h2>
+            <h3 class="font-bold text-[20px] ">Global Work</h3>
+          </div>
+        </div>
+        <p class="mt-4  text-gray-600  xl:text-[18px] text-[16px] px-5 w-[300px]">
+          Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+          vitae sit.
+        </p>
+      </div>
+    </div>
+    <!-- svg -->
+    <div class=" shape absolute z-40 w-full h-full lg:top-[600px] md:top-[620px] top-[622px] ">
+      <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+      </svg>
+    </div>
+
+  </div>
+
+  <!--  -->
+  <div class=" lg:flex pt-20 lg:pt-[300px]  pb-20">
+    <div class=" lg:w-3/6 sm:px-20 px-5">
+      <h6 class="capitalize text-primaryColor font-bold"> About Us</h6>
+      <h1 class=" md:text-[37px] text-[20px] font-bold lg:w-[400px]">Changing the way you receive healthcare.</h1>
+    </div>
+    <div class="lg:w-3/6 md:text-[18px] text-[16px] lg:mt-0 mt-10 text-grayText lg:px-0 sm:px-20 px-5 font-medium lg:pr-20  ">
+      <article class="mb-7">
+        Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur illum
+        facere.Vivamus a ligula quam tesque et libero ut justo, ultrices in. Ut eu leo non..
+      </article>
+      <article>
+        Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.Ea ipsum sed consequuntur illum
+        facere.
+      </article>
+
+
+      <button
+        class="bg-blue-500 my-8 text-white px-7 hover:border-2 capitalize hover:bg-white hover:text-blue-500 hover:border-blue-500 text-[20px] py-3 rounded-full font-bold ">
+        read more
+      </button>
+    </div>
+  </div>
+  <!--medick  -->
+  <div class="lg:flex justify-between h-full bg-gray-100 py-10 doc">
+
+    <div class="lg:w-3/6 sm:px-20 px-5">
+      <h6 class=" font-bold  text-primaryColor"> Extraordinary Services</h6>
+      <h1 class=" sm:text-[34px] text-[26px] font-bold">
+        Why You Should Choose Medick?.
+      </h1>
+      <div class="flex my-10 flex-col gap-y-5 items-center space-y-8">
+        <!-- First Block -->
+        <div class="flex items-center gap-x-5">
+          <div
+            class=" icon p-6 hover:bg-primaryColor rounded-[5px] hover:text-white flex justify-center items-center bg-white text-[25px] text-primaryColor">
+            <i class="fa-regular fa-calendar-days"></i>
+          </div>
+          <div>
+            <h2 class="sm:text-[24px] text-[16px] font-bold">10 Years Of Experience</h2>
+            <p class="text-gray-600 mt-2 sm:text-[20px] text-[16px]">
+              Lorem ipsum dolor sit amet consectetur ipsum elit. Lorem ipsum dolor sit amet elit.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Second Block -->
+        <div class="flex items-center gap-x-5">
+          <div
+            class=" icon p-6 flex justify-center hover:bg-primaryColor rounded-[5px] hover:text-white items-center bg-white text-[25px] text-primaryColor">
+            <i class="fa-regular fa-pen-to-square"></i>
+          </div>
+          <div>
+            <h2 class="lg:text-[24px] text-[16px] font-bold">Free Consultation</h2>
+            <p class="text-gray-600 mt-2 sm:text-[20px] text-[16px]">
+              Lorem ipsum dolor sit amet consectetur ipsum elit. Lorem ipsum dolor sit amet elit.
+            </p>
+          </div>
+        </div>
+
+        <!-- Third Block -->
+        <div class="flex items-center gap-x-5">
+          <div
+            class=" icon p-6 flex justify-center items-center hover:bg-primaryColor hover:text-white bg-white rounded-[5px] text-[25px] text-primaryColor">
+            <i class="fa-sharp fa-regular fa-biohazard"></i>
+          </div>
+          <div>
+            <h2 class="sm:text-[24px] text-[16px] font-bold">100% Guranteed</h2>
+            <p class="text-gray-600 mt-2 sm:text-[20px] text-[16px] ">
+              Lorem ipsum dolor sit amet consectetur ipsum elit. Lorem ipsum dolor sit amet elit.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="lg:w-3/6 lg:pr-20 sm:px-20 lg:pl-10 px-5">
+      <img class="w-full rounded-[10px]" src="./assets/ab.jpg" />
+    </div>
+  </div>
+  <!--  -->
+  <div class="my-10 ">
+
+    <div class="text-center">
+      <h6 class="font-bold text-primaryColor">Extraordinary Services</h6>
+      <h1 class="font-bold text-[37px]"> Our Services.</h1>
+    </div>
+    <div class="grid lg:grid-cols-2 sm:px-20 px-5 gap-x-10 py-10 gap-y-9">
+
+      <!-- Therapiya Section -->
+      <div class="flex items-center gap-x-5 gap-y-5">
+        <div   class="icon w-[7rem] h-[5rem] rounded-[5px] items-center text-[30px] text-primaryColor bg-gray-100 flex justify-center">
+          <span class="fa fa-american-sign-language-interpreting"></span>
+        </div>
+        <div>
+          <h2 class="text-[24px]  font-bold">Therapiya</h2>
+          <p class="text-gray-600 mt-2">
+            Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio adipisicing.
+          </p>
+        </div>
+
+      </div>
+      <!-- Pharmocology Section -->
+      <div class="flex items-center gap-x-5 ">
+        <div
+          class="icon w-[7rem] h-[5rem] rounded-[5px] items-center text-[30px] text-primaryColor bg-gray-100 flex justify-center">
+          <i class="fa-regular fa-building"></i>
+        </div>
+        <div>
+          <h2 class="text-[24px] font-bold">Pharmocology</h2>
+          <p class="text-gray-600 mt-2">
+            Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio adipisicing.
+          </p>
+        </div>
+      </div>
+      <!-- Dentistry section -->
+      <div class="flex items-center gap-x-5">
+        <div
+        class="icon w-[7rem] h-[5rem] rounded-[5px] items-center text-[30px] text-primaryColor bg-gray-100 flex justify-center">
+          <i class="fa-brands fa-superpowers"></i>
+        </div>
+        <div>
+          <h2 class="text-[24px] font-bold">Dentistry</h2>
+          <p class="text-gray-600 mt-2">
+            Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio adipisicing.
+          </p>
+        </div>
+
+      </div>
+      <!-- Cardiology Section -->
+      <div class="flex items-center gap-x-5">
+        <div   class="icon w-[7rem] h-[5rem] rounded-[5px] items-center text-[30px] text-primaryColor bg-gray-100 flex justify-center">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <div>
+          <h2 class="text-[24px] font-bold">Cardiology</h2>
+          <p class="text-gray-600 mt-2">
+            Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio adipisicing.
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Virusology Section -->
+      <div class="flex items-center gap-x-5">
+        <div
+        class="icon w-[7rem] h-[5rem] rounded-[5px] items-center text-[30px] text-primaryColor bg-gray-100 flex justify-center">
+          <i class="fa-solid fa-snowflake"></i>
+        </div>
+        <div>
+          <h2 class="text-[24px] font-bold">Virusology</h2>
+          <p class="text-gray-600 mt-2">
+            Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio adipisicing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Eye Surgery Section -->
+      <div class="flex items-center gap-x-5">
+        <div   class="icon w-[7rem] h-[5rem] rounded-[5px] items-center text-[30px] text-primaryColor bg-gray-100 flex justify-center">
+          <i class="fa-solid fa-eye"></i>
+        </div>
+        <div class="">
+          <h2 class="text-[24px] font-bold">Eye Surgery</h2>
+          <p class="text-gray-600 mt-2 text-[15px] ">
+            Lorem ipsum dolor sit amet, Ea consequuntur illum facere aperiam sequi optio adipisicing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- counter   -->
+  <div class=" count w-full min-h-[450px] gap-y-3 text-white grid lg:grid-cols-4 grid-cols-2 px-5 sm:px-[200px]  items-center ">
+    <div class="flex flex-col items-center justify-center gap-y-5">
+      <span class="fa fa-users text-primaryColor sm:text-[30px] text-[20px]"></span>
+      <div class="counter sm:text-[50px] text-[30px] font-bold" id="doctors"> 0</div>
+      <h1 class="font-semibold sm:text-[25px] text-[13px]">Expert Doctors</h1>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-y-5">
+      <span class="fa fa-laptop text-primaryColor sm:text-[30px] text-[20px]"></span>
+      <div class="counter sm:text-[50px] text-[30px] font-bold" id="programs">0</div>
+      <h4 class="font-semibold sm:text-[25px] text-[13px]">Health Programs</h4>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-y-5">
+      <i class="fa-regular fa-face-smile text-primaryColor sm:text-[30px] text-[20px]"></i>
+      <div class="counter sm:text-[50px] text-[30px] font-bold" id="clients">0</div>
+      <h4 class="font-semibold sm:text-[25px] text-[13px]">Happy Clients</h4>
+    </div>
+    <div class="flex flex-col items-center justify-center gap-y-5">
+      <span class="fa fa-trophy text-primaryColor sm:text-[30px] text-[20px]"></span>
+      <div class="counter sm:text-[50px] text-[30px] font-bold" id="meets">0</div>
+      <h4 class="font-semibold sm:text-[25px] text-[13px]">Success Meets</h4>
+    </div>
+  </div>
+
+  <!--  -->
+
+  <div class=" image w-full min-h-[400px] bg-gray-200 py-10">
+    <div class="text-center">
+      <h4 class="text-primaryColor text-[18px] font-bold ">Latest News</h4>
+      <h1 class="text-[37px] font-bold">Blog Posts</h1>
+    </div>
+
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  sm:px-20 px-5 gap-y-8 gap-x-10 my-10">
+
+      <div class="grid gap-y-2">
+        <img src="./assets/g7.jpg" alt="" class="rounded-[15px]">
+        <h6 class="text-blue-500 font-medium"> Investigations</h6>
+        <h1 class=" text-[23px] font-semibold">
+          The Right Choice For Your Health Care Needs.
+        </h1>
+        <div class="sm:grid grid-cols-3 flex justify-between">
+      
+          <span>
+            <i class="fa-solid fa-user  text-primaryColor mx-2"></i>
+            by Admin</span>
+          <span> <i class="fa-regular fa-clock mx-2 text-primaryColor"></i>Jan 22,2021</span>
+          <span> <i class="fa-regular fa-comment mx-2 text-primaryColor"></i>3</span>
+        </div>
+      </div>
+      <!--  -->
+      <div class="grid gap-y-2">
+        <img src="./assets/g5.jpg" alt="" class="rounded-[15px]">
+        <h6 class="text-blue-500 font-medium "> Researches</h6>
+        <h1 class=" text-[23px] font-semibold">
+          The Right Choice For Your Health Care Needs.
+        </h1>
+        <div class="sm:grid grid-cols-3 flex justify-between">
+      
+          <span>
+            <i class="fa-solid fa-user  text-primaryColor mx-2"></i>
+            by Admin</span>
+          <span> <i class="fa-regular fa-clock mx-2 text-primaryColor"></i>Jan 22,2021</span>
+          <span> <i class="fa-regular fa-comment mx-2 text-primaryColor"></i>3</span>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="grid gap-y-2">
+        <img src="./assets/g3.jpg" alt="" class="rounded-[15px]">
+        <h6 class="text-blue-500 font-medium"> Your Health</h6>
+        <h1 class=" text-[23px] font-semibold">The Right Choice For Your Health Care Needs.
+        </h1>
+        <div class="sm:grid grid-cols-3 flex justify-between">
+      
+          <span>
+            <i class="fa-solid fa-user  text-primaryColor mx-2"></i>
+            by Admin</span>
+          <span> <i class="fa-regular fa-clock mx-2 text-primaryColor"></i>Jan 22,2021</span>
+          <span> <i class="fa-regular fa-comment mx-2 text-primaryColor"></i>3</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--  -->
+
+  <div class="form w-full min-h-[530px] grid gap-y-5 lg:grid-cols-2 sm:px-20 px-5 py-[50px]">
+<div class="space-y-5">
+  <h6 class="text-primaryColor uppercase tracking-wide font-bold">Free Appointment</h6>
+<h1 class="font-bold text-white text-[35px]">Make an Appointment</h1>
+<article>
+  <p class="text-gray-400  text-[20px]" >
+    we believe in providing the best possible care to all our existing patients and welcomenew patients to sample.
+
+  </p>
+ <p class="text-gray-400  text-[20px]">
+  Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio adipisicing.
+ </p>
+</article>
+<button class=" w-[150px] flex justify-center  text-white items-center hover:bg-transparent hover:border-2 hover:border-primaryColor h-[50px] bg-primaryColor text-[22px] rounded-full"><a href="contact.html">contact us</a></button>
+</div>
+<!-- form -->
+ <div class=" form-inputs h-full bg-white lg:w-5/6 lg:ms-auto rounded-[20px] flex flex-col justify-center items-center ">
+<form class=" w-full  gap-y-10 grid sm:grid-cols-2 p-5 gap-x-6">
+<input type="text" placeholder="Full Name" class=" px-5 focus:outline-none bg-gray-200 h-[50px] rounded-[10px]" />
+<input type="text"  placeholder="Enter Email" class=" px-5 focus:outline-none bg-gray-200 h-[50px] rounded-[10px]" />
+<input type="text" placeholder="Enter Number" class=" px-5 focus:outline-none bg-gray-200 h-[50px] rounded-[10px]" />
+<input type="text" placeholder=" date"  class=" px-5 focus:outline-none bg-gray-200 h-[50px] rounded-[10px]" />
+<input type="text" placeholder="other" class=" px-5 focus:outline-none bg-gray-200 h-[50px] rounded-[10px]" />
+<input type="text" placeholder="selected doctor" class=" px-5 focus:outline-none bg-gray-200 h-[50px] rounded-[10px]" />
+</form>
+<button class=" sm:ms-auto w-[250px] my-4 text-white hover:text-primaryColor capitalize mx-5 flex justify-center items-center hover:bg-transparent hover:border-2 hover:border-primaryColor h-[50px] bg-primaryColor text-[22px] rounded-full">
+  book appointment
+
+</button>
+ </div>
+  </div>
+  <div class="my-10 lg:block hidden">
+   <div class="my-10 ">
+    <h2 class= " happy text-[17px] text-primaryColor text-center font-semibold">
+      Happy Clients
+    </h2>
+    <h1 class="text-center font-bold text-[35px]">What Our Clients Say</h1>
+   </div>
+    <div class="relative w-full h-[400px] overflow-hidden">
+      <!-- Slides container -->
+      <div id="slider" class="  flex transition-transform duration-75 ease-in">
+        <!-- Slide 1 -->
+        <div class="w-full  flex-shrink-0 flex">
+          <div class="flex w-full px-20 m-auto justify-between">
+            <div class="w-1/3 p-4">
+              <div class="testimonial-content px-5 ">
+                <div class="testimonial border-[1px] border-gray-400 p-5 rounded-[10px]">
+                  <div class="my-4">
+                    <blockquote class="">
+                      <q class="font-bold text-[20px] py-[20px]">Pellen tesque libero ut ju..</q>
+                    </blockquote>
+                  </div>
+                  <p class="text-[20px]  text-gray-500">Lorem ipsum dolor sit amet elit. hic odio tenetur. ante ipsum primis in
+                    faucibus orci luctus.Vivamus a ligula quam tesque et libero ut justo, ultrices in. </p>
+                </div>
+                <div class="flex my-5">
+                  <!-- <div class="bottom-info mt-4"> -->
+                    <img src="./assets/team1.jpg" class=" w-[20%] rounded-full" alt="placeholder image">
+                  <!-- </div> -->
+                      <div class="people-info align-self mx-5">
+                    
+                        <h3 class="font-bold text-[18px]">John wilson</h3>
+                        <p class="text-gray-500 ">Example City</p>
+                </div>
+               
+                 
+                </div>
+              </div>
+            </div>
+            
+            <div class="w-1/3 p-4">
+              <div class="testimonial-content px-5 ">
+                <div class="testimonial border-[1px] border-gray-400 p-5 rounded-[10px]">
+                  <div class="my-4">
+                    <blockquote class="">
+                      <q class="font-bold text-[20px] py-[20px]">Pellen tesque libero ut ju..</q>
+                    </blockquote>
+                  </div>
+                  <p class="text-[20px]  text-gray-500">Lorem ipsum dolor sit amet elit. hic odio tenetur. ante ipsum primis in
+                    faucibus orci luctus.Vivamus a ligula quam tesque et libero ut justo, ultrices in. </p>
+                </div>
+                <div class="flex my-5">
+                  <!-- <div class="bottom-info mt-4"> -->
+                    <img src="./assets/team2.jpg" class=" w-[20%] rounded-full" alt="placeholder image">
+                  <!-- </div> -->
+                      <div class="people-info align-self mx-5">
+                    
+                        <h3 class="font-bold text-[18px]">John wilson</h3>
+                        <p class="text-gray-500 ">Example City</p>
+                </div>
+               
+                 
+                </div>
+              </div>
+            </div>
+          
+            <div class="w-1/3 p-4">
+              <div class="testimonial-content px-5 ">
+                <div class="testimonial border-[1px] border-gray-400 p-5 rounded-[10px]">
+                  <div class="my-4">
+                    <blockquote class="">
+                      <q class="font-bold text-[20px] py-[20px]">Pellen tesque libero ut ju..</q>
+                    </blockquote>
+                  </div>
+                  <p class="text-[20px]  text-gray-500">Lorem ipsum dolor sit amet elit. hic odio tenetur. ante ipsum primis in
+                    faucibus orci luctus.Vivamus a ligula quam tesque et libero ut justo, ultrices in. </p>
+                </div>
+                <div class="flex my-5">
+                  <!-- <div class="bottom-info mt-4"> -->
+                    <img src="./assets/team3.jpg" class=" w-[20%] rounded-full" alt="placeholder image">
+                  <!-- </div> -->
+                      <div class="people-info align-self mx-5">
+                    
+                        <h3 class="font-bold text-[18px]">John wilson</h3>
+                        <p class="text-gray-500 ">Example City</p>
+                </div>
+               
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    
+        <!-- Slide 2 -->
+        <div class="w-full flex-shrink-0 flex">
+          <div class="flex w-full px-20 justify-between">
+            <div class="w-1/3 p-4">
+              <div class="testimonial-content px-5 ">
+                <div class="testimonial border-[1px] border-gray-400 p-5 rounded-[10px]">
+                  <div class="my-4">
+                    <blockquote class="">
+                      <q class="font-bold text-[20px] py-[20px]">Pellen tesque libero ut ju..</q>
+                    </blockquote>
+                  </div>
+                  <p class="text-[20px]  text-gray-500">Lorem ipsum dolor sit amet elit. hic odio tenetur. ante ipsum primis in
+                    faucibus orci luctus.Vivamus a ligula quam tesque et libero ut justo, ultrices in. </p>
+                </div>
+                <div class="flex my-5">
+                  <!-- <div class="bottom-info mt-4"> -->
+                    <img src="./assets/team3.jpg" class=" w-[20%] rounded-full" alt="placeholder image">
+                  <!-- </div> -->
+                      <div class="people-info align-self mx-5">
+                    
+                        <h3 class="font-bold text-[18px]">John wilson</h3>
+                        <p class="text-gray-500 ">Example City</p>
+                </div>
+               
+                 
+                </div>
+              </div>
+            </div>
+            <div class="w-1/3 p-4">
+              <div class="testimonial-content px-5 ">
+                <div class="testimonial border-[1px] border-gray-400 p-5 rounded-[10px]">
+                  <div class="my-4">
+                    <blockquote class="">
+                      <q class="font-bold text-[20px] py-[20px]">Pellen tesque libero ut ju..</q>
+                    </blockquote>
+                  </div>
+                  <p class="text-[20px]  text-gray-500">Lorem ipsum dolor sit amet elit. hic odio tenetur. ante ipsum primis in
+                    faucibus orci luctus.Vivamus a ligula quam tesque et libero ut justo, ultrices in. </p>
+                </div>
+                <div class="flex my-5">
+                  <!-- <div class="bottom-info mt-4"> -->
+                    <img src="./assets/team2.jpg" class=" w-[20%] rounded-full" alt="placeholder image">
+                  <!-- </div> -->
+                      <div class="people-info align-self mx-5">
+                    
+                        <h3 class="font-bold text-[18px]">John wilson</h3>
+                        <p class="text-gray-500 ">Example City</p>
+                </div>
+               
+                 
+                </div>
+              </div>
+            </div>
+            <div class="w-1/3 p-4">
+              <div class="testimonial-content px-5 ">
+                <div class="testimonial border-[1px] border-gray-400 p-5 rounded-[10px]">
+                  <div class="my-4">
+                    <blockquote class="">
+                      <q class="font-bold text-[20px] py-[20px]">Pellen tesque libero ut ju..</q>
+                    </blockquote>
+                  </div>
+                  <p class="text-[20px]  text-gray-500">Lorem ipsum dolor sit amet elit. hic odio tenetur. ante ipsum primis in
+                    faucibus orci luctus.Vivamus a ligula quam tesque et libero ut justo, ultrices in. </p>
+                </div>
+                <div class="flex my-5">
+                  <!-- <div class="bottom-info mt-4"> -->
+                    <img src="./assets/team1.jpg" class=" w-[20%] rounded-full" alt="placeholder image">
+                  <!-- </div> -->
+                      <div class="people-info align-self mx-5">
+                    
+                        <h3 class="font-bold text-[18px]">John wilson</h3>
+                        <p class="text-gray-500 ">Example City</p>
+                </div>
+               
+                 
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    
+      <!-- Navigation dots -->
+      <div class="absolute bottom-1   left-1/2 transform -translate-x-1/2 flex space-x-2 ">
+        <span class="dot hover:bg-primaryColor bg-gray-400 rounded-full cursor-pointer" onclick="moveSlide(0)"></span>
+        <span class="dot bg-gray-400 hover:bg-primaryColor rounded-full cursor-pointer" onclick="moveSlide(1)"></span>
+      </div>
+    </div>
+  </div>
+  <div class="footer mt-20  w-full min-h-[400px]  ">
+  <div class="font-semibold  text-[18px] w-full min-h-[300px] py-10 grid xl:grid-cols-4 lg:grid-cols-3  sm:grid-cols-2  gap-x-10 px-20">
+    <div class=" flex lg:w-[380px] flex-col gap-y-5">
+      <h1 class="text-white text-[25px] font-bold mb-5"> Medick</h1>
+    <p class="text-[18px]" >Lorem ipsum dolor sit amet consectetur ipsum elit. Lorem ipsum dolor sit amet elit.
+    </p>
+     <ul class="flex flex-col gap-y-5">
+      <li class="hover:text-primaryColor cursor-pointer"> <i class="fa-duotone fa-solid fa-phone mx-2"></i>+(21) 255 999 8888</li>
+      <li class="hover:text-primaryColor cursor-pointer"><i class="fa-solid fa-envelope mx-2"></i> medick@mail.com</li>
+     </ul>
+     </div>
+     <!--  -->
+     <div class="w-[250px] lg:ml-20">
+      <h1 class="text-white text-[25px] font-bold mb-5 "> History</h1>
+      <ul class="flex flex-col gap-y-2 my-5 ">
+        <li class="hover:text-primaryColor cursor-pointer"><a>About Us</a></li>
+      <li class="hover:text-primaryColor cursor-pointer"><a>Blog Posts</a></li>
+      <li class="hover:text-primaryColor cursor-pointer"><a>Departments</a></li>
+      <li class="hover:text-primaryColor cursor-pointer"><a>Careers</a></li>
+      <li class="hover:text-primaryColor cursor-pointer"><a>Team</a></li>
+      <li class="hover:text-primaryColor cursor-pointer"><a>Contact us</a></li>
+      </ul>
+     </div>
+     <!--  -->
+     <div class="w-[250px]">
+      <h1 class="text-white text-[25px] font-bold mb-5 "> Useful Links</h1>
+    <ul class="flex flex-col gap-y-2 my-5">
+      <li class="hover:text-primaryColor cursor-pointer"><a>Terms of service</a></li>
+      <li class="hover:text-primaryColor cursor-pointer"><a>Privacy policy</a></li>
+      <li class="hover:text-primaryColor cursor-pointer"><a>Documentation</a></li>
+      <li class="hover:text-primaryColor cursor-pointer"><a>Support</a></li>
+      <li class="hover:text-primaryColor cursor-pointer"><a>Components</a></li>
+      <li class="hover:text-primaryColor cursor-pointer"><a>Changelog</a></li>
+    </ul>
+     </div>
+     <!--  -->
+     <div class=" w-[300px] ">
+      <h1 class="text-white text-[25px] font-bold  "> Subscribe to our Newsletter</h1>
+      <p class="my-5">Enter your email and receive the latest news, updates and special offers from us.</p>
+      <input type="text" placeholder="your Email Address" class="in focus:outline-none my-5 rounded-full block w-full">
+      <button class="w-full in  rounded-full font-semibold text-[20px] text-white hover:bg-transparent hover:border-2 hover:text-primaryColor hover:border-primaryColor  bg-primaryColor ">subscibe</button>
+  </div>
+  </div>
+  <hr class="w-full h-[1px] bg-gray-600"/>
+  <div class=" px-20 py-10 flex justify-between">
+    <h1 class="text-white text-[20px]">© 2024 Medick. All rights reserved. Design by <span class="text-primaryColor">shimaa ahmed</span></h1>
+  
+  <div class="flex justify-between gap-x-5 ">
+    <i class="fa-brands fa-facebook cursor-pointer  hover:text-primaryColor"></i>
+    <i class="fa-brands fa-twitter cursor-pointer  hover:text-primaryColor"></i>
+    <i class="fa-brands fa-instagram cursor-pointer  hover:text-primaryColor"></i>
+    <i class="fa-brands fa-tiktok cursor-pointer hover:text-primaryColor"></i>
+  </div>
+</div>
+</div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
