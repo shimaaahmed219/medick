@@ -31,6 +31,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// fexid navbar
+
+  window.addEventListener("scroll", function() {
+    const navbar = document.querySelector("nav");
+   
+    if (window.scrollY > 100) {
+      navbar.classList.add("fixed", "top-0", "left-0","w-full", "bg-footer", "z-50");
+    
+    } else {
+      navbar.classList.remove("fixed", "top-0", "left-0","w-full","bg-footer", "z-50");
+    }
+  });
+
+
 // Counter Function
 function startCounter(id, targetNum, duration) {
     const element = document.getElementById(id);
@@ -89,6 +103,7 @@ function moveSlide(index) {
   
   // بدء السلايدر عند النقطة الأولى
   moveSlide(0);
+
   const menuBtn = document.getElementById('menu-btn');
   const mobileNav = document.getElementById('mobile-nav');
 
